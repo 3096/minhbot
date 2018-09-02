@@ -39,11 +39,12 @@ async def on_message(message):
 
         if message.content.startswith('+help'):
             msg = "Meme guide:\n"
-            msg = msg + "+`memename` to send meme\n"
-            msg = msg + "add: `+add name url` or `add name` with upload\n"
-            msg = msg + "list: `+ls`\n"
-            msg = msg + "rename: `+rename oldname newname`\n"
-            msg = msg + "remove: `+rm name`\n"
+            msg = msg + "`+memename` to send meme\n"
+            msg = msg + "`+add name url` or `+add name` with upload to add a meme\n"
+            msg = msg + "`+ls` to list all saved memes\n"
+            msg = msg + "`+rename oldname newname` to rename a meme\n"
+            msg = msg + "`+rm name` to remove a meme\n"
+            msg = msg + "`+help` to display this\n"
 
             await client.send_message(message.channel, msg)
 
