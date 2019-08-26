@@ -1,11 +1,10 @@
-from botconfig import bot_token
-from botconfig import meme_list_file_name
+from botconfig import Config
 from minh import Minh
 
 import discord
 
-minh = Minh(meme_list_file_name)
 client = discord.Client()
+minh = Minh(client)
 
 
 @client.event
@@ -22,4 +21,4 @@ async def on_message(message):
         await minh.proc_cmd(message)
 
 
-client.run(bot_token)
+client.run(Config.bot_token)
