@@ -1,3 +1,6 @@
 #!/bin/bash
 
-until python3 minhbot.py; do :; done;
+while :
+do
+	python3 bot.py
+done
