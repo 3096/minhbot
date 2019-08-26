@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# minhbot data
+memelist
+memelist_backup/
